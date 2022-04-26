@@ -1,13 +1,13 @@
 class Pokemon{
 
     constructor(){
-    let vida;
-    let ataque;
+    let vida = 0;
+    let ataque = 0;
     // let ataqueEspecial; heredable
     // let defensaEspecia; heredable
-    let defensa;
-    let velocidad;
-    let estadoVital;
+    let defensa = 0;
+    let velocidad = 0;
+    let estadoVital = 0;
     }
 
 
