@@ -1,3 +1,4 @@
+export default Pokemon
 class Pokemon{
 
     constructor(){

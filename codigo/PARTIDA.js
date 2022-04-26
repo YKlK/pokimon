@@ -1,5 +1,5 @@
-import pikachu from clasePikachu
-const pika1 = pikachu()
+import { default as Pikachu } from "./clasePikachu.js"
+const pika1 = Pikachu()
 
 
 class partida {

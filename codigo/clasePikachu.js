@@ -1,4 +1,5 @@
-import Pokemon from clasepokemon
+import { default as Pokemon } from "./clasepokemon.js"
+export default Pikachu
 
 class Pikachu extends Pokemon{
     constructor(){

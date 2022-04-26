@@ -1,6 +1,10 @@
-import pokemon from clasepokemon
+import { default as Pikachu } from "./clasePikachu.js"
+
 
 document.addEventListener("DOMContentLoaded",function(){
+
+   
+
 // funciones 
 
 
@@ -18,7 +22,7 @@ const sonidoPikachu = new Audio();  sonidoPikachu.src="/musicaAmbientalPapu/pika
 /*variables de etiquetas */
 const containerSeleccion = document.querySelector(".container");
 
-const pikachu = document.getElementById("pikachu").addEventListener("click",()=>{sonidoPikachu.play();  })
+const pikachu = document.getElementById("pikachu").addEventListener("click",()=>{sonidoPikachu.play()  })
 const charizard = document.getElementById("charizard").addEventListener("click",()=>{alert("si")})
 const venazaur = document.getElementById("venazaur").addEventListener("click",()=>{})
 const graveler = document.getElementById("graveler").addEventListener("click",()=>{})
