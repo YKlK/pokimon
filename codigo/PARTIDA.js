@@ -1,13 +1,13 @@
-import { default as Pikachu } from "./clasePikachu.js"
-const pika1 = Pikachu()
+// import Pikachu from "./clasePikachu.js"
+// const pika1 = Pikachu()
 
 
-class partida {
+// class partida {
 
-    constructor(pokemon){
+//     constructor(pokemon){
         
         
-    }
+//     }
 
 
-}
+// }

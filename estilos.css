@@ -7,6 +7,15 @@
     text-align: center;
 }
 
+/* .eliminar{
+    display: none;
+} */
+
+.containerdifuso{
+   display: none;
+}
+
+
 .container{
     display: flex;
     flex-direction: row;

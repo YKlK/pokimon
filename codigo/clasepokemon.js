@@ -1,75 +1,33 @@
-export default Pokemon
-class Pokemon{
+
+ export default class Pokemon{
 
     constructor(){
-    let vida = 0;
-    let ataque = 0;
+    this.vida = 0;
+    this.ataque = 0;
     // let ataqueEspecial; heredable
     // let defensaEspecia; heredable
-    let defensa = 0;
-    let velocidad = 0;
-    let estadoVital = 0;
+    this.defensa = 0;
+    this.velocidad = 0;
+    this.estadoVital = 0;
     }
 
 
-    /*funciones getters y setters */
-    get vida(){
-        return this.vida
-    }
+ 
+//    atacar(){
 
-    set vida(vida){
-        this.vida = vida
-    }
-
-    get ataque(){
-        return this.ataque
-    }
-
-    set ataque(ataque){
-        this.ataque = ataque
-    }
-
-    get defensa(){
-        return this.defensa
-    }
-
-    set defensa(defensa){
-        this.defensa = defensa
-    }
-
-    get velocidad(){
-        return this.velocidad;  
-    }
-
-    set velocidad(velocidad){
-        this.velocidad = velocidad
-    }
-
-    get estadoVital(){
-        return this.estadoVital
-    }
-
-    set estadoVital(estadoVital){
-        this.estadoVital = estadoVital
-    }
-
-    /*funciones getters y setters */
-
-   atacar(){
-
-   }
+//    }
 
 
-   PerderVida(){
+//    PerderVida(){
 
-   }
+//    }
 
 
-   defenderse(){
+//    defenderse(){
 
-   }
+//    }
 
-   estadoDeVida(){
+//    estadoDeVida(){
 
-   }
+//    }
 }
