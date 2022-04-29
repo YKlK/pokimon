@@ -6,6 +6,23 @@
     font-size: 20px;
     text-align: center;
 }
+
+@keyframes salticos {
+    0%{
+        transform:rotateX(70deg) translatez(100px);
+    }
+    100%{
+        transform:rotateX(70deg) translatez(0px);
+    }
+}
+@keyframes punto {
+    0%{content: "";}
+    25%{content: ".  ";}
+    50%{content: ". .";}
+    75%{content: ". . . ";}
+    100%{content: ". . . .";}
+}
+
 .espera{
     overflow: hidden;
     width: 100vw;
@@ -62,3 +79,262 @@
     outline: 5000px solid rgba(150, 150, 150, .1);
 }
 
+.circulo{
+    perspective: 400px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   transform: none;
+   position: relative;
+   background-color: crimson;
+}
+
+.circulo :nth-child(2){
+    background-color: transparent;
+    position: absolute;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    content: " ";
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: rotateX(70deg) translate(0);
+    animation-name: salticos;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-delay: 1.3s;
+}
+.circulo :nth-child(3){
+    background-color: transparent;
+    position: absolute;
+    display: inline-block;
+    width: 275px;
+    height: 275px;
+    content: " ";
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: rotateX(70deg) translate(0);
+    animation-name: salticos;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-delay: 1.2s;
+}
+.circulo :nth-child(4){
+    background-color: transparent;
+    position: absolute;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    content: " ";
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: rotateX(70deg) translate(0);
+    animation-name: salticos;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-delay: 1.1s;
+}
+.circulo :nth-child(5){
+    background-color: transparent;
+    position: absolute;
+    display: inline-block;
+    width: 225px;
+    height: 225px;
+    content: " ";
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: rotateX(70deg) translate(0);
+    animation-name: salticos;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+.circulo :nth-child(6){
+    background-color: transparent;
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    content: " ";
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: rotateX(70deg) translate(0);
+    animation-name: salticos;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-delay: .9s;
+}
+.circulo :nth-child(7){
+    background-color: transparent;
+    position: absolute;
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    content: " ";
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: rotateX(70deg) translate(0);
+    animation-name: salticos;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-delay: .8s;
+}
+
+.circulo :nth-child(8){
+    background-color: transparent;
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    content: " ";
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: rotateX(70deg) translate(0);
+    animation-name: salticos;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-delay: .7s;
+}
+.circulo :nth-child(9){
+    background-color: transparent;
+    position: absolute;
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    content: " ";
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: rotateX(70deg) translate(0);
+    animation-name: salticos;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-delay: .6s;
+}
+.circulo :nth-child(10){
+    background-color: transparent;
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    content: " ";
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: rotateX(70deg) translate(0);
+    animation-name: salticos;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-delay: .5s;
+}
+
+.circulo :nth-child(11){
+    background-color: transparent;
+    position: absolute;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    content: " ";
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: rotateX(70deg) translate(0);
+    animation-name: salticos;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-delay: .4s;
+}
+.circulo :nth-child(12){
+    background-color: transparent;
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    content: " ";
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: rotateX(70deg) translate(0);
+    animation-name: salticos;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-delay: .3s;
+}
+
+.circulo :nth-child(13){
+    background-color: transparent;
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: " ";
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: rotateX(70deg) translate(0);
+    animation-name: salticos;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-delay: .2s;
+}
+
+.circulo :nth-child(14){
+    background-color: transparent;
+    position: absolute;
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    content: " ";
+    border: 3px solid white;
+    border-radius: 50%;
+    transform: rotateX(70deg) translate(0);
+    animation-name: salticos;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-delay: .1s;
+}
+
+
+.puntos::after{
+    content: " ";
+    animation-name: punto;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: linear;
+    
+}
+.puntos::before{
+    content: " ";
+    animation-name: punto;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: linear;
+    
+}

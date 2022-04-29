@@ -7,6 +7,8 @@ export default class Pikachu extends Pokemon{
         this.defensaEspecial = 0;
         this.sonidoPikachu = new Audio()
         this.sonidoPikachu.src = "/musicaAmbientalPapu/pikachu.mp3"
+        this.fotoPolla=`<img src="imagenes_de_pelea/pikachu.png" alt="fotopolla">`
+        this.fotoPollaEnemiga=`<img src="imagenes_de_pelea/pikachuPelea.png" alt="fotopolla">`
     }
 
 

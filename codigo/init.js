@@ -136,6 +136,7 @@ PokemonPikachu.addEventListener("click",()=>{
       cuerpo.removeChild(containerSeleccion)
       iframeespera.classList.remove("containerdifuso")
   },2000)
+  
 })
 
 
