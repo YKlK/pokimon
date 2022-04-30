@@ -1,13 +1,12 @@
-// import Pikachu from "./clasePikachu.js"
-// const pika1 = Pikachu()
+import Pikachu from "./clasePikachu.js"
 
 
-// class partida {
+export default class partida {
 
-//     constructor(pokemon){
-        
-        
-//     }
+    constructor(pokemon,pokemonPelea){
+    this.pokemonprincipal = pokemon   
+    this.pokemonenemigo = pokemonPelea
+    }
 
 
-// }
+}

@@ -1,5 +1,5 @@
  import Pikachu from "./clasePikachu.js"
-
+ import partida from "./PARTIDA.js"
 document.addEventListener("DOMContentLoaded",function(){
 
    
@@ -111,6 +111,7 @@ const pika =new Pikachu()
 
 
 /*variables de etiquetas */
+const arena = document.getElementById("estadio")
 const cuerpo = document.getElementById("body")
 const containerSeleccion = document.getElementById("container");
 const iframeespera = document.getElementById("espera")
@@ -136,7 +137,12 @@ PokemonPikachu.addEventListener("click",()=>{
       cuerpo.removeChild(containerSeleccion)
       iframeespera.classList.remove("containerdifuso")
   },2000)
-  
+  setTimeout(()=>{ 
+    iframeespera.classList.add("containerdifuso")
+    
+
+},10000)
+
 })
 
 

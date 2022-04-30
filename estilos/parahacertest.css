@@ -7,18 +7,44 @@
     
 }
 
-.pikakulon{
+.muchalucha{
+    visibility: hidden;
    display: grid;
-   grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
-   grid-template-rows: 1fr 1fr 1fr 500px 200px;
-   grid-template-areas: "emp emp emp emp emp vidaE fotoE"
-                        "emp emp emp emp emp emp fotoE"
-                        "emp emp emp emp emp emp emp"
-                        "foto vida boton1 boton2 boton3 boton4 emp"
-                        "cometarista" 
-   ;
+    grid-template-columns: repeat(1fr,3);
+    grid-template-rows: repeat(1fr, 2) 25px;
 }
 
 .poke{
-    grid-area: foto;
+    grid-column: 1/2 ;
+
+    grid-row:2/3;
+}
+.pokevida{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.narrador{
+    border: 5px groove black;
+    grid-row: 3/4;
+    grid-column: 1/4;
+}
+
+.pokeenemigo{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.pokeenemigovida{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.botonPelea{
+   
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.botones{
+
+    margin-left: 1em;
+    padding: 25px;
+    border: 1px solid black;
 }
