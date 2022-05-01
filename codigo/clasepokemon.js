@@ -2,6 +2,7 @@
  export default class Pokemon{
 
     constructor(){
+     
     this.vida = 0;
     this.ataque = 0;
     // let ataqueEspecial; heredable
@@ -24,7 +25,7 @@
 
 
 //    defenderse(){
-
+    
 //    }
 
 //    estadoDeVida(){

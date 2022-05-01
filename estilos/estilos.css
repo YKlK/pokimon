@@ -342,8 +342,8 @@
 .muchalucha{
    
    display: grid;
-    grid-template-columns: repeat(1fr,3);
-    grid-template-rows: repeat(1fr, 2) 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 25px;
 }
 
 .poke{
@@ -379,4 +379,11 @@
     margin-left: 1em;
     padding: 25px;
     border: 1px solid black;
+}
+
+input[type=number] { -moz-appearance:textfield; }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }

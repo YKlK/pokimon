@@ -106,7 +106,7 @@ if (text === "blastoise"){
 
 /*variables pendejas que usare por mis webos tu viste klk conmigo */
 const pika =new Pikachu()
-
+const pikaEnemigo = new Pikachu()
 /*variables pendejas que usare por mis webos tu viste klk conmigo */
 
 
@@ -129,21 +129,37 @@ const PokemonBlastoise = document.getElementById("blastoise")
 
 
 
-PokemonPikachu.addEventListener("click",()=>{ 
+PokemonPikachu.addEventListener("click",function(){ 
      
   pika.reproducirSonido() 
   selecionDePokemon("pikachu")
-  setTimeout(()=>{ 
+  setTimeout(function(){ 
       cuerpo.removeChild(containerSeleccion)
       iframeespera.classList.remove("containerdifuso")
   },2000)
-  setTimeout(()=>{ 
+  setTimeout(function(){ 
     iframeespera.classList.add("containerdifuso")
-    
-
+    arena.classList.remove("containerdifuso")
+    arena.classList.add("muchalucha")
+    const partidaa = new partida(pika,pikaEnemigo);
+    arena.innerHTML = partidaa.tablero 
 },10000)
 
+
+
 })
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
