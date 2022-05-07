@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 export class Pokemon{
 
@@ -223,49 +224,26 @@ export class Pikachu extends Pokemon{
 
 
  export class partida {
+=======
+export default class partida {
+>>>>>>> parent of 8dcc258 (haciendo las ultimas pruebas antes de la batalla x2a)
 
-    constructor(principal,enemigo,arena){
-    this.arena = arena
-    this.pokemonprincipal = principal
-    this.pokemonenemigo = enemigo
-   
-    
-    }
-
-    crearTablero(){
-        for(let i =0 ; i< 4 ;i++){
-            this.arena.appendChild(this.pokemonprincipal.devolverTodoPrincipal()[i])
-                if(i<2){
-                    this.arena.appendChild(this.pokemonenemigo.devolverTodoEnemigo()[i])
-                } 
-            }
-
-        }
-    
+    constructor(pokemon,pokemonPelea){
+    this.pokemonprincipal = pokemon   
+    this.pokemonenemigo = pokemonPelea
+    this.tablero = pokemon.fotoPolla + pokemonPelea.fotoPollaEnemiga
+    this.turno = true
+}
 
     turno(){
+        if(this.turno){
         
-        if (this.pokemonprincipal instanceof Pikachu){
-            alert("si")
-        }
-        
-
-            
-
             // this.turno=false
-        
-        
-
-    //         // this.turno=true
-        
+        }
+        else{
+            // this.turno=true
+        }
     }
-
-    // init__partida(){
-    //     if(this.pokemonprincipal.vida.value > 0 ){
-    //         this.turno()
-    //     }
-
-    // }
 
     
 

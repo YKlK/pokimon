@@ -10,8 +10,6 @@
     this.defensa = 0;
     this.velocidad = 0;
     this.estadoVital = 0;
-    this.comentarista = document.createElement("P")
-    this.botonpelea = document.createElement("DIV")
     }
 
 
