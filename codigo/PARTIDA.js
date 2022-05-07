@@ -1,21 +1,50 @@
+import Pikachu from "./clasePikachu.js"
+
+
 export default class partida {
 
-    constructor(pokemon,pokemonPelea){
-    this.pokemonprincipal = pokemon   
-    this.pokemonenemigo = pokemonPelea
-    this.tablero = pokemon.fotoPolla + pokemonPelea.fotoPollaEnemiga
-    this.turno = true
-}
+    constructor(principal,enemigo,arena){
+    this.arena = arena
+    this.pokemonprincipal = principal
+    this.pokemonenemigo = enemigo
+   
+    
+    }
+
+    crearTablero(){
+        for(let i =0 ; i< 4 ;i++){
+            this.arena.appendChild(this.pokemonprincipal.devolverTodoPrincipal()[i])
+                if(i<2){
+                    this.arena.appendChild(this.pokemonenemigo.devolverTodoEnemigo()[i])
+                } 
+            }
+
+        }
+    
 
     turno(){
-        if(this.turno){
         
+        if (this.pokemonprincipal instanceof Pikachu){
+            alert("si")
+        }
+        
+
+            
+
             // this.turno=false
-        }
-        else{
-            // this.turno=true
-        }
+        
+        
+
+    //         // this.turno=true
+        
     }
+
+    // init__partida(){
+    //     if(this.pokemonprincipal.vida.value > 0 ){
+    //         this.turno()
+    //     }
+
+    // }
 
     
 

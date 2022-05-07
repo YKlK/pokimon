@@ -1,6 +1,6 @@
  import Pikachu from "./clasePikachu.js"
  import partida from "./PARTIDA.js"
-document.addEventListener("DOMContentLoaded",function(){
+ document.addEventListener("DOMContentLoaded",function(){
 
    
 
@@ -106,7 +106,7 @@ if (text === "blastoise"){
 
 /*variables pendejas que usare por mis webos tu viste klk conmigo */
 const pika =new Pikachu()
-const pikaEnemigo = new Pikachu()
+const pikamalo = new Pikachu()
 /*variables pendejas que usare por mis webos tu viste klk conmigo */
 
 
@@ -138,36 +138,42 @@ PokemonPikachu.addEventListener("click",function(){
       iframeespera.classList.remove("containerdifuso")
   },2000)
   setTimeout(function(){ 
+
     iframeespera.classList.add("containerdifuso")
     arena.classList.remove("containerdifuso")
     arena.classList.add("muchalucha")
-    const partidaa = new partida(pika,pikaEnemigo);
-    arena.innerHTML = partidaa.tablero 
+  
+    
 },10000)
 
 
+var juego = new partida(pika,pikamalo,arena);
+
+/*programando partida por ahora experimental */
+juego.pokemonprincipal.establecedorDeEstadisticasPrincipal()
+juego.pokemonenemigo.establecerdorDeEstadisticasEnemigas()
+juego.crearTablero()
+juego.turno()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-})
-
+ })
