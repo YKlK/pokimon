@@ -1,5 +1,5 @@
- import Pikachu from "./clasePikachu.js"
- import partida from "./PARTIDA.js"
+ import * from "./PARTIDA.js"
+
  document.addEventListener("DOMContentLoaded",function(){
 
    
@@ -153,7 +153,7 @@ var juego = new partida(pika,pikamalo,arena);
 juego.pokemonprincipal.establecedorDeEstadisticasPrincipal()
 juego.pokemonenemigo.establecerdorDeEstadisticasEnemigas()
 juego.crearTablero()
-juego.turno()
+
 
 
 

@@ -1,5 +1,5 @@
 
- export default class Pokemon{
+ class Pokemon{
 
     constructor(){
      
