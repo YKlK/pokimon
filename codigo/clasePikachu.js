@@ -1,4 +1,5 @@
 import Pokemon from "./clasepokemon.js";
+
 export default class Pikachu extends Pokemon{
     constructor(){
         super()
@@ -6,10 +7,7 @@ export default class Pikachu extends Pokemon{
         this.ataqueEspecial = 0;
         this.defensaEspecial = 0;
         this.sonidoPikachu = new Audio()
-        this.impactruenobtn = document.getElementById("impactrueno")
-        this.agilidadbtn = document.getElementById("agilidad")
-        this.ataque_rapidobtn = document.getElementById("ataque_rapido")
-        this.chispabtn = document.getElementById("chispa")
+      
 
 
         this.sonidoPikachu.src = "/musicaAmbientalPapu/pikachu.mp3"
@@ -42,6 +40,15 @@ export default class Pikachu extends Pokemon{
         this.defensa = Math.random
         this.velocidad = Math.random * 100
         
+    }
+
+    establecedorDeBotones(){
+        this.impactruenobtn = document.getElementById("impactrueno").addEventListener("click",(e)=>{
+            alert(e.target)
+        })
+        this.agilidadbtn = document.getElementById("agilidad")
+        this.ataque_rapidobtn = document.getElementById("ataque_rapido")
+        this.chispabtn = document.getElementById("chispa")
     }
 
 

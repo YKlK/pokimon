@@ -76,7 +76,7 @@
 
 .pokemon:hover{
     padding-bottom: 185px;
-    outline: 5000px solid rgba(150, 150, 150, .1);
+    outline: 2000px solid rgba(150, 150, 150, .1);
 }
 
 .circulo{
