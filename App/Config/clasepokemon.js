@@ -11,24 +11,5 @@
     this.velocidad = 0;
     this.estadoVital = 0;
     }
-
-
- 
-//    atacar(){
-
-//    }
-
-
-//    PerderVida(){
-
-//    }
-
-
-//    defenderse(){
     
-//    }
-
-//    estadoDeVida(){
-
-//    }
 }
